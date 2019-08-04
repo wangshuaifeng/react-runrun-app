@@ -1,10 +1,10 @@
-import { RouteComponentProps } from 'react-router-dom'
+import { RouteComponentProps } from 'react-router-dom';
 
 declare global {
   export interface IProps extends RouteComponentProps {
-    [key: string]: any
+    [key: string]: any;
   }
-  export interface AnyProps {
+  export interface IAnyProps {
     [propsName: string]: any;
   }
 }

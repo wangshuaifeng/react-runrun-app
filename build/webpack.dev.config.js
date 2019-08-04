@@ -1,6 +1,7 @@
 const path = require("path");
 const merge = require('webpack-merge')
 const commonConfig = require('./webpack.base.config.js')
+const TSLintPlugin = require('tslint-webpack-plugin');
 const webpack = require("webpack");
 
 module.exports = merge(commonConfig, {
@@ -17,6 +18,9 @@ module.exports = merge(commonConfig, {
     plugins: [
         //开启HMR(热替换功能,替换更新部分,不重载页面！) 相当于在命令行加 --hot
         new webpack.HotModuleReplacementPlugin(),
+        new TSLintPlugin({
+            files: ['./src/**/*.ts']
+        }),
         new webpack.DefinePlugin({
             'process.env': {
                 VUEP_BASE_URL: '/'

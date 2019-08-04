@@ -1,4 +1,5 @@
-import  * as React from 'react';
+import * as React from 'react';
+
 import Button from '@material-ui/core/Button';
 
 interface IState {
@@ -9,17 +10,17 @@ export default class Count extends React.Component<any, IState> {
     constructor(props: any) {
         super(props);
         this.state = {
-            count: 0
-        }
+            count: 0,
+        };
     }
 
-    handleClick = () => {
+    public handleClick = () => {
         this.setState({
-            count: this.state.count + 1
+            count: this.state.count + 1,
         });
     }
 
-    render() {
+    public render() {
         return (
             <div>
                 当前count值：{this.state.count}<br/>
@@ -27,6 +28,6 @@ export default class Count extends React.Component<any, IState> {
                     <div>增加1</div> 
                 </Button>
             </div>
-        )
+        );
     }
 }

@@ -1,9 +1,10 @@
-import * as React  from "react";
-import { Route, Link, Switch } from "react-router-dom";
-import styles from './index.scss';
+import * as React from "react";
+import { Route, Switch } from "react-router-dom";
+import styles from "./index.scss";
 
-import Home from "../pages/Home";
 import Count from "../pages/Count";
+import Home from "../pages/Home";
+
 const PrimaryLayout = () => (
   <div className={styles.routerStyle}>
     <main>

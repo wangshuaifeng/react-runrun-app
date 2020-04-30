@@ -68,7 +68,7 @@
     "@types/react": "^16.8.23",
     "@types/react-dom": "^16.8.5",
     "core-js": "^2.6.9",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "lib-flexible": "^0.3.2",
     "material-ui": "^0.20.2",
     "react": "^16.8.6",
